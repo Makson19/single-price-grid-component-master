@@ -1,0 +1,30 @@
+
+// ===== RESET ===== //
+*, ::after, ::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+// ===== Variables ===== //
+$cyan: hsl(179, 62%, 43%);
+$light-cyan: hsl(179, 47%, 52%);
+$bright-yellow: hsl(71, 73%, 54%);
+$light-gray: hsl(203, 44%, 93%);
+$grayish-blue: hsl(217, 22%, 67%);
+$background: hsl(208, 42%, 91%);
+
+$font: 'Karla', sans-serif;
+
+body {
+    background-color: $background;
+    font-family: $font;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+

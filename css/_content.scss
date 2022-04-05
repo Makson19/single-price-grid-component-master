@@ -1,0 +1,118 @@
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 3rem 1.8rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(163, 165, 173, 0.6);
+}
+
+
+.wrappers {
+    padding: 1.8rem 1.5rem;
+
+    h1 {
+        font-size: 1.3rem; 
+        font-weight: 700;
+        margin-bottom: 1.2rem;
+    }
+
+    h2 {
+        font-size: 1.1rem;
+        font-weight: 700;
+        margin-bottom: 1.2rem;
+    }
+
+}
+
+.wrapper-1 {
+    background-color: #FFF;
+
+    h1 {
+        color: $cyan;
+    }
+
+    p:nth-child(2) {
+        color: $bright-yellow;
+        font-weight: 700;
+        margin-bottom: 1rem;
+    }
+
+    p:nth-child(3) {
+        font-size: 0.88rem;
+        font-weight: 400;
+        max-width: 36rem;
+        color: $grayish-blue;
+        line-height: 1.7;
+    }
+}
+
+
+.wrapper-2 {
+    background-color: $cyan;
+    color: $light-gray;
+    text-align: center;
+
+    h2 {
+        text-align: left;
+    }
+
+    div {
+        display: flex;
+        align-items: center;
+        gap: 0.7rem;
+        margin-bottom: 0.5rem;
+
+        span:first-child {
+            font-size: 1.8rem;
+            font-weight: 700;
+        }
+
+        span:last-child {
+            font-size: 0.88rem;
+            font-weight: 400;
+            color: hsl(182, 66%, 57%);
+        }
+    }
+
+    p {
+        font-size: 0.88rem;
+        margin-bottom: 2.2rem;
+        text-align: left;
+    }
+
+    a {
+        text-decoration: none;
+        background-color: $bright-yellow;
+        color: $light-gray;
+        padding: 0.9rem 5.8rem;
+        border-radius: 0.5rem;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+
+        &:hover {
+            background-color: rgba(192, 223, 52, 0.7);
+            transition: 0.3s ease-in-out;
+        }
+    }
+}
+
+
+.wrapper-3 {
+    background-color: $light-cyan;
+
+    h2 {
+        color: $light-gray;
+    }
+    
+    ul {
+        list-style-type: none;
+
+        li {
+            font-size: 0.88rem;
+            font-weight: 400;
+            color: $light-gray;
+            margin-bottom: 0.1rem;
+        }
+    }    
+}

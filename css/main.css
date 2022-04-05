@@ -1,0 +1,225 @@
+*, ::after, ::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #dee9f2;
+  font-family: "Karla", sans-serif;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 3rem 1.8rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  -webkit-box-shadow: 0 5px 20px rgba(163, 165, 173, 0.6);
+          box-shadow: 0 5px 20px rgba(163, 165, 173, 0.6);
+}
+
+.wrappers {
+  padding: 1.8rem 1.5rem;
+}
+
+.wrappers h1 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+}
+
+.wrappers h2 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+}
+
+.wrapper-1 {
+  background-color: #FFF;
+}
+
+.wrapper-1 h1 {
+  color: #2ab2af;
+}
+
+.wrapper-1 p:nth-child(2) {
+  color: #c0df34;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.wrapper-1 p:nth-child(3) {
+  font-size: 0.88rem;
+  font-weight: 400;
+  max-width: 36rem;
+  color: #98a7bd;
+  line-height: 1.7;
+}
+
+.wrapper-2 {
+  background-color: #2ab2af;
+  color: #e5eff5;
+  text-align: center;
+}
+
+.wrapper-2 h2 {
+  text-align: left;
+}
+
+.wrapper-2 div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.7rem;
+  margin-bottom: 0.5rem;
+}
+
+.wrapper-2 div span:first-child {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.wrapper-2 div span:last-child {
+  font-size: 0.88rem;
+  font-weight: 400;
+  color: #49d5da;
+}
+
+.wrapper-2 p {
+  font-size: 0.88rem;
+  margin-bottom: 2.2rem;
+  text-align: left;
+}
+
+.wrapper-2 a {
+  text-decoration: none;
+  background-color: #c0df34;
+  color: #e5eff5;
+  padding: 0.9rem 5.8rem;
+  border-radius: 0.5rem;
+  -webkit-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.wrapper-2 a:hover {
+  background-color: rgba(192, 223, 52, 0.7);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.wrapper-3 {
+  background-color: #4bbebc;
+}
+
+.wrapper-3 h2 {
+  color: #e5eff5;
+}
+
+.wrapper-3 ul {
+  list-style-type: none;
+}
+
+.wrapper-3 ul li {
+  font-size: 0.88rem;
+  font-weight: 400;
+  color: #e5eff5;
+  margin-bottom: 0.1rem;
+}
+
+@media (min-width: 500px) {
+  .wrappers {
+    padding: 2.5rem;
+  }
+  .wrappers h1 {
+    font-size: 1.6rem;
+  }
+  .wrappers h2 {
+    font-size: 1.3rem;
+  }
+  .wrapper-1 p:nth-child(2) {
+    font-size: 1.2rem;
+  }
+  .wrapper-1 p:nth-child(3) {
+    font-size: 1rem;
+  }
+  .wrapper-2 h2 {
+    text-align: center;
+  }
+  .wrapper-2 div {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .wrapper-2 div span:last-child {
+    font-size: 1rem;
+  }
+  .wrapper-2 p {
+    font-size: 1rem;
+    text-align: center;
+  }
+  .wrapper-3 {
+    text-align: center;
+  }
+}
+
+@media (min-width: 700px) {
+  .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 0.9fr 1.1fr;
+        grid-template-rows: 0.9fr 1.1fr;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "w1 w1" "w2 w3";
+  }
+  .wrapper-1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: w1;
+  }
+  .wrapper-2 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: w2;
+    text-align: left;
+  }
+  .wrapper-2 h2 {
+    text-align: left;
+  }
+  .wrapper-2 div {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .wrapper-2 p {
+    margin-bottom: 2rem;
+  }
+  .wrapper-3 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: w3;
+    text-align: left;
+  }
+}
+/*# sourceMappingURL=main.css.map */
