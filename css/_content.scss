@@ -58,18 +58,23 @@
         text-align: left;
     }
 
-    div {
+    span {
         display: flex;
         align-items: center;
+        text-align: left;
         gap: 0.7rem;
         margin-bottom: 0.5rem;
 
-        span:first-child {
+        p {
+            margin: 0;
+        }
+
+        p:first-child {
             font-size: 1.8rem;
             font-weight: 700;
         }
 
-        span:last-child {
+        p:last-child {
             font-size: 0.88rem;
             font-weight: 400;
             color: hsl(182, 66%, 57%);

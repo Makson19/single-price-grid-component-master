@@ -1,5 +1,5 @@
 
-@media (min-width: 500px) {
+@media (min-width: 31.25rem) {
     .wrappers {
         padding: 2.5rem;
 
@@ -27,7 +27,7 @@
             text-align: center;
         }
 
-        div {
+        span {
             justify-content: center;
 
             span:last-child {
@@ -47,7 +47,7 @@
 }
 
 
-@media (min-width: 700px) {
+@media (min-width: 44rem) {
     .container {
         display: grid;
         grid-template-rows: 0.9fr 1.1fr;

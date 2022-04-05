@@ -83,23 +83,28 @@ body {
   text-align: left;
 }
 
-.wrapper-2 div {
+.wrapper-2 span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-align: left;
   gap: 0.7rem;
   margin-bottom: 0.5rem;
 }
 
-.wrapper-2 div span:first-child {
+.wrapper-2 span p {
+  margin: 0;
+}
+
+.wrapper-2 span p:first-child {
   font-size: 1.8rem;
   font-weight: 700;
 }
 
-.wrapper-2 div span:last-child {
+.wrapper-2 span p:last-child {
   font-size: 0.88rem;
   font-weight: 400;
   color: #49d5da;
@@ -146,7 +151,7 @@ body {
   margin-bottom: 0.1rem;
 }
 
-@media (min-width: 500px) {
+@media (min-width: 31.25rem) {
   .wrappers {
     padding: 2.5rem;
   }
@@ -165,12 +170,12 @@ body {
   .wrapper-2 h2 {
     text-align: center;
   }
-  .wrapper-2 div {
+  .wrapper-2 span {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .wrapper-2 div span:last-child {
+  .wrapper-2 span span:last-child {
     font-size: 1rem;
   }
   .wrapper-2 p {
@@ -182,7 +187,7 @@ body {
   }
 }
 
-@media (min-width: 700px) {
+@media (min-width: 44rem) {
   .container {
     display: -ms-grid;
     display: grid;
